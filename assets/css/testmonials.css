@@ -6,13 +6,6 @@
     padding: 3rem 0;
 }
 
-.testmonials__title {
-    color: var(--color-7);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-}
-
 .testmonials__grid {
     display: grid;
     grid-template-columns: minmax(auto, 300px);

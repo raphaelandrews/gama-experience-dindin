@@ -10,10 +10,13 @@
   --color-2-alt: hsl(340, 100%, 59%);
   --color-3: hsl(0, 0%, 33%);
   --color-4: hsl(0, 0%, 99%);
-  --color-4-alt: hsl(0, 0%, 93%);
+  --color-4-alt: hsl(0, 0%, 79%);
   --color-5: hsl(0, 0%, 97%);
   --color-6: hsl(0, 0%, 0%);
   --color-7: hsl(174, 100%, 29%);
+  --color-8: hsl(0, 0%, 77%);
+  --color-9: hsl(171, 39%, 42%);
+  --color-9-alt: hsl(171, 39%, 36%);
 
   /*========== Font and typography ==========*/
   --font: 'Ubuntu', sans-serif;

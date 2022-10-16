@@ -32,7 +32,7 @@ img {
     height: auto;
 }
 
-/*=============== CLASSES REUTILIZÁVEIS ===============*/
+/*=============== CLASSES E ID'S REUTILIZÁVEIS ===============*/
 .container {
     max-width: 1086px;
     margin-left: 1rem;
@@ -43,31 +43,24 @@ img {
     color: var(--color-3) !important;
 }
 
-.grid {
-    display: grid;
-    gap: 1.25rem;
+.nav__link {
+    color: var(--color-4);
+    transition: 0.5s ease;
 }
 
-.main {
-    overflow: hidden;
-}
-
-.section__title,
-.section__subtitle {
-    text-align: center;
+.nav__link:hover {
+    color: var(--color-4-alt);
 }
 
 .section__title {
-    font-size: var(--h2-font-size);
-    color: var(--first-color);
-    margin-bottom: 2rem;
+    color: var(--color-7);
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 4rem;
 }
 
-.section__subtitle {
-    display: block;
-    font-size: var(--smaller-font-size);
-    color: var(--text-color-light);
-}
+
+
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 1025px) {

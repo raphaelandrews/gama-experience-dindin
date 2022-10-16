@@ -1,0 +1,98 @@
+.posts {
+    background-color: var(--color-5);
+}
+
+.posts__container {
+    padding: 3rem 0;
+}
+
+.posts__grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 320px);
+    justify-content: center;
+    gap: 4rem;
+    line-height: 20px;
+}
+
+.posts__card {
+    display: grid;
+    gap: 1.25rem;
+}
+
+.posts__img {
+    width: 100%;
+    height: 193px;
+    background-color: var(--color-8);
+}
+
+.posts__span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--color-7);
+}
+
+.post__text {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-6);
+}
+
+.btn__container {
+    display: flex;
+    justify-content: center;
+}
+
+.posts__btn {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 28px;
+    color: var(--color-2);
+    padding: .75rem 1.75rem;
+    margin-top: 4rem;
+    border-radius: 4rem;
+    border: 2px solid var(--color-2);
+    transition: .4s;
+}
+
+.posts__btn:hover {
+    color: var(--color-4);
+    background-color: var(--color-2);
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 769px) {
+    .posts__grid {
+        grid-template-columns: repeat(2, minmax(auto, 320px));
+    }
+
+    .posts__span {
+        font-size: 1.75rem;
+    }
+
+    .post__text {
+        font-size: 1.125rem;
+    } 
+}
+
+@media screen and (min-width: 1025px) {
+    .posts__container {
+        padding: 8rem 0;
+    }
+
+    .posts__btn {
+        font-size: 1.5rem;
+        margin-top: 6rem;
+    }
+}
+
+
+@media screen and (min-width: 1440px) {
+    .posts__container {
+        padding: 6.5rem 0;
+    }
+
+    .posts__grid {
+        grid-template-columns: repeat(3, minmax(auto, 420px));
+    }
+}
