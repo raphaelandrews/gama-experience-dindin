@@ -37,11 +37,6 @@
     color: var(--color-6);
 }
 
-.btn__container {
-    display: flex;
-    justify-content: center;
-}
-
 .posts__btn {
     display: inline-block;
     font-size: 1.25rem;

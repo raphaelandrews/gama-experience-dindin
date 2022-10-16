@@ -6,13 +6,6 @@ body {
     transition: .4s;
 }
 
-h1,
-h2,
-h3 {
-    color: var(--title-color);
-    font-weight: var(--font-semibold);
-}
-
 ul {
     list-style: none;
 }
@@ -34,7 +27,7 @@ img {
 
 /*=============== CLASSES E ID'S REUTILIZÁVEIS ===============*/
 .container {
-    max-width: 1086px;
+    max-width: 1250px;
     margin-left: 1rem;
     margin-right: 1rem;
 }
@@ -59,8 +52,10 @@ img {
     margin-bottom: 4rem;
 }
 
-
-
+.btn__container {
+    display: flex;
+    justify-content: center;
+}
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 1025px) {

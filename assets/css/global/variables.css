@@ -21,28 +21,7 @@
   /*========== Font and typography ==========*/
   --font: 'Ubuntu', sans-serif;
   --font-2: 'Nunito', sans-serif;
-  --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: .938rem;
-  --small-font-size: .813rem;
-  --smaller-font-size: .75rem;
-  --tiny-font-size: .625rem;
-
 }
-
-/* Responsive typography */
-@media screen and (min-width: 968px) {
-  :root {
-    --biggest-font-size: 2.5rem;
-    --h1-font-size: 2.25rem;
-    --h2-font-size: 1.5rem;
-    --h3-font-size: 1.25rem;
-    --normal-font-size: 1rem;
-    --small-font-size: .875rem;
-    --smaller-font-size: .813rem;
-  }
 
   /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 1025px) {
@@ -50,4 +29,4 @@
     --header-height: 7.25rem;
   }
 }
-}
+
