@@ -10,14 +10,6 @@ section {
     padding: 5em 0;
 }
 
-h1 {
-    color: var(--color-2);
-    font-weight: 700;
-    font-size: 3rem;
-    line-height: 69px;
-    margin-bottom: .5em;
-}
-
 ul {
     list-style: none;
     padding: 0;
@@ -65,15 +57,4 @@ img {
     color: var(--color-4-alt);
 }
 
-.btn__container {
-    display: flex;
-    justify-content: center;
-}
-
 /*=============== RESPONSIVE ===============*/
-@media screen and (min-width: 600px) {
-    .row {
-        display: flex;
-        justify-content: space-between;
-    }
-}
