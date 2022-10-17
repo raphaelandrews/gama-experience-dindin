@@ -6,6 +6,18 @@ body {
     transition: .4s;
 }
 
+section {
+    padding: 5em 0;
+}
+
+h1 {
+    color: var(--color-2);
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 69px;
+    margin-bottom: .5em;
+}
+
 ul {
     list-style: none;
 }
@@ -28,8 +40,8 @@ img {
 /*=============== CLASSES E ID'S REUTILIZÁVEIS ===============*/
 .container {
     max-width: 1250px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
 }
 
 .active__link {
@@ -45,22 +57,15 @@ img {
     color: var(--color-4-alt);
 }
 
-.section__title {
-    color: var(--color-7);
-    font-size: 1.75rem;
-    font-weight: 700;
-    margin-bottom: 4rem;
-}
-
 .btn__container {
     display: flex;
     justify-content: center;
 }
 
 /*=============== RESPONSIVE ===============*/
-@media screen and (min-width: 1025px) {
-    .container {
-        margin-left: auto;
-        margin-right: auto;
+@media screen and (min-width: 600px) {
+    .row {
+        display: flex;
+        justify-content: space-between;
     }
 }

@@ -40,55 +40,49 @@
         </nav>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero__container container">
-                <div class="hero__content">
-                    <h1 class="hero__title">Educação<br class="hero__br"> Financeira<br class="hero__br"> é tudo de bom
-                    </h1>
-                    <h2 class="hero__subtitle">
-                        Vem comigo que te mostro<br class="hero__br"> por onde começar
-                    </h2>
-                    <a href="#" class="hero__btn">quero saber mais</a>
-                </div>
-                <img src="./assets/img/ilustra-banner.png" alt="Ilustra Banner" class="hero__img">
+    <section class="hero">
+        <div class="container row">
+            <div class="hero__text">
+                <h1>Educação Financeira é tudo de bom</h1>
+                <p>Vem comigo que te mostro por onde começar</p>
+                <a href="#" class="btn">quero saber mais</a>
             </div>
-        </section>
+            <img src="./assets/img/ilustra-banner.png" alt="Ilustra Banner" class="hero__img">
+        </div>
+    </section>
 
+    <main>
         <section class="courses">
-            <div class="courses__container container">
-                <div class="courses__card">
-                    <img src="./assets/img/ilustra-poupando.png" alt="Investimento para iniciantes"
-                        class="courses__img-1">
-                    <h3 class="courses__title">Investimento para iniciantes</h3>
-                    <p class="courses__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+            <div class="container row">
+                <div class="col">
+                    <img class="courses__img-1" src="./assets/img/ilustra-poupando.png" alt="Investimento para iniciantes">
+                    <h3>Investimento para iniciantes</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html" class="courses__btn">começar agora</a>
+                    <a href="./pages/cursos.html">começar agora</a>
                 </div>
-                <div class="courses__card">
-                    <img src="./assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
-                        class="courses__img-2">
-                    <h3 class="courses__title">Poupando e Rendendo</h3>
-                    <p class="courses__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                <div class="col courses__card">
+                    <img class="courses__img-2" src="./assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo">
+                    <h3>Poupando e Rendendo</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html" class="courses__btn">começar agora</a>
+                    <a href="./pages/cursos.html">começar agora</a>
                 </div>
-                <div class="courses__card">
-                    <img src="./assets/img/ilustra-independencia.png" alt="Curso Independência Financeira"
-                        class="courses__img-3">
-                    <h3 class="courses__title">Independência Financeira</h3>
-                    <p class="courses__text">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                <div class="col courses__card">
+                    <img class="courses__img-3" src="./assets/img/ilustra-independencia.png" alt="Curso Independência Financeira">
+                    <h3>Independência Financeira</h3>
+                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html" class="courses__btn">começar agora</a>
+                    <a href="./pages/cursos.html">começar agora</a>
                 </div>
             </div>
         </section>
 
         <section class="testmonials">
-            <div class="testmonials__container container">
-                <h3 class="section__title">O QUE FALAM SOBRE NÓS</h3>
-                <div class="testmonials__grid">
-                    <div class="testmonials__card">
+            <div class="container">
+                <h2 class="section__title section__title___testmonials">O QUE FALAM SOBRE NÓS</h2>
+                <div class="row">
+                    <div class="col testmonials__card">
                         <img src="./assets//img/icon-wally.png" alt="Foto de Perfil" class="testmonials__img">
                         <div class="testmonials__info">
                             <p class="testmonials__text">”Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -97,7 +91,7 @@
                         </div>
                     </div>
 
-                    <div class="testmonials__card">
+                    <div class="col testmonials__card">
                         <img src="./assets//img/icon-jaden.png" alt="Foto de Perfil" class="testmonials__img">
                         <div class="testmonials__info">
                             <p class="testmonials__text">”Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -106,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="testmonials__card">
+                    <div class="col testmonials__card">
                         <img src="./assets//img/icon-whoopi.png" alt="Foto de Perfil" class="testmonials__img">
                         <div class="testmonials__info">
                             <p class="testmonials__text">”Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -115,7 +109,7 @@
                         </div>
                     </div>
 
-                    <div class="testmonials__card">
+                    <div class="col testmonials__card">
                         <img src="./assets/img/icon-jane.png" alt="Foto de Perfil" class="testmonials__img">
                         <div class="testmonials__info">
                             <p class="testmonials__text">”Sed ut perspiciatis unde omnis iste natus error sit voluptatem
@@ -128,10 +122,10 @@
         </section>
 
         <section class="posts">
-            <div class="posts__container container">
-                <h3 class="section__title">MAIS CONTEÚDO PARA VOCÊ</h3>
-                <div class="posts__grid">
-                    <div class="posts__card">
+            <div class="container">
+                <h2 class="section__title section__title___posts">MAIS CONTEÚDO PARA VOCÊ</h2>
+                <div class="row">
+                    <div class="col posts__card">
                         <div class="posts__img"></div>
                         <p class="post__text"><span class="posts__span">Itaque earum rerum</span><br>hic tenetur a
                             sapiente delectus, ut aut
@@ -140,7 +134,7 @@
                         </p>
                     </div>
 
-                    <div class="posts__card">
+                    <div class="col posts__card">
                         <div class="posts__img"></div>
                         <p class="post__text"><span class="posts__span">Itaque earum rerum</span><br>hic tenetur a
                             sapiente delectus, ut aut
@@ -149,7 +143,7 @@
                         </p>
                     </div>
 
-                    <div class="posts__card">
+                    <div class="col posts__card">
                         <div class="posts__img"></div>
                         <p class="post__text"><span class="posts__span">Itaque earum rerum</span><br>hic tenetur a
                             sapiente delectus, ut aut
@@ -173,7 +167,7 @@
             </a>
 
             <ul class="nav__list-footer">
-                <li class="nav__item-footer"><a href="/pages/cursos.html" class="nav__link">cursos</a></li>
+                <li class="nav__item-footer"><a href="./pages/cursos.html" class="nav__link">cursos</a></li>
                 <li class="nav__item-footer"><a href="./pages/blog.html" class="nav__link">blog</a></li>
                 <li class="nav__item-footer"><a href="./pages/contato.html" class="nav__link">contato</a></li>
             </ul>
