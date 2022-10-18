@@ -1,3 +1,22 @@
+body:has(dialog[open]) {
+    filter: blur(6px);
+    overflow: hidden;
+}
+
+dialog {
+    border: none;
+    overflow: auto;
+    text-align: center;
+    padding: 2em 1em;
+    width: 90%;
+    height: 80vh;
+    max-width: 1016px;
+    max-height: 600px;
+    background-color: var(--color-4);
+    inset: 0;
+    transition: .4s;
+}
+
 h1 {
     font-size: 3.75rem;
     font-weight: 700;
@@ -33,11 +52,13 @@ h2 {
     font-size: 2.25rem;
     font-weight: 700;
     line-height: 40px;
+    text-align: center;
     color: var(--color-2);
     margin-bottom: .75em;
 }
 
-section p {
+section p,
+ol {
     font-size: 1.125rem;
     font-weight: 300;
     line-height: 21px;
@@ -46,7 +67,11 @@ section p {
     margin-bottom: 2em;
 }
 
-.btn {
+section p {
+    text-align: center;
+}
+
+.courses__btn {
     display: inline-block;
     font-size: 1.25rem;
     font-weight: 400;
@@ -56,15 +81,92 @@ section p {
     border-radius: 100px;
     background-color: var(--color-9);
     transition: .4s;
+    cursor: pointer;
 }
 
-.btn:hover {
+.courses__btn:hover {
     background-color: var(--color-9-alt);
+}
+
+dialog .row {
+    border: none;
+}
+
+dialog h2 {
+    font-size: 1.75rem;
+}
+
+dialog p,
+ol {
+    font-size: .875rem;
+}
+
+dialog p {
+    max-width: 472px;
+    margin: 0 auto 2em;
+}
+
+dialog img {
+    width: clamp(200px, 60vw, 340px);
+}
+
+.btn__modal {
+    display: inline-block;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 23px;
+    color: var(--color-6);
+    padding: .75em 1.5em;
+    border-radius: 100px;
+    background-color: var(--color-8);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.btn__modal:hover {
+    background-color: var(--color-8-alt);
+}
+
+.close {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-6);
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--color-6-alt);
+}
+
+.active-modal {
+    opacity: 1;
+    visibility: visible;
 }
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 900px) {
-    section img {
+
+    h2,
+    section p {
+        text-align: left;
+    }
+
+    dialog {
+        text-align: left;
+    }
+
+    dialog img {
+        width: 30%;
+    }
+
+    .btn__container {
+        display: inherit;
+    }
+
+    section img,
+    dialog img {
         margin: 0;
         align-self: flex-start;
     }
@@ -76,6 +178,10 @@ section p {
     }
 
     .col:first-child {
+        width: 30%;
+    }
+
+    .modal__col:first-child {
         width: 30%;
     }
 

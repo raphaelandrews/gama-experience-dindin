@@ -151,6 +151,7 @@ h3 {
 .testmonials__text {
     font-weight: 300;
     max-width: 363px;
+    margin: 0 auto;
 }
 
 .testmonials__name {
@@ -222,7 +223,7 @@ h3 {
     font-weight: 400;
     line-height: 29px;
     color: var(--color-2);
-    padding: .75em 1.75em;
+    padding: .5em 2em;
     margin-top: 3em;
     border-radius: 100px;
     border: 2px solid var(--color-2);
@@ -235,6 +236,12 @@ h3 {
 }
 
 /*=============== RESPONSIVE ===============*/
+@media screen and (max-width: 340px) {
+    .posts__btn {
+        padding: .5em 1.75em;
+    }
+}
+
 @media screen and (min-width: 600px) {
     h1 {
         font-size: 3.75rem;

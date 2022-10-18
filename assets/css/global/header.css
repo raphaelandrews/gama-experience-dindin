@@ -16,7 +16,7 @@
 }
 
 .nav__list {
-    position: fixed;
+    position: absolute;
     left: -100%;
     top: 70px;
     gap: 0;
@@ -63,6 +63,19 @@
     margin: 5px auto;
     background-color: #fff;
     transition: all .3s ease-in-out;
+}
+
+.active__link {
+    color: var(--color-3) !important;
+}
+
+.nav__link {
+    color: var(--color-4);
+    transition: 0.5s ease;
+}
+
+.nav__link:hover {
+    color: var(--color-4-alt);
 }
 
 

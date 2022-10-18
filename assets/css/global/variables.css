@@ -6,6 +6,7 @@
   --header-height: 5rem;
   
   --color: hsl(174, 53%, 38%);
+  --color-alt: hsl(174, 53%, 32%);
   --color-2: hsl(340, 100%, 63%);
   --color-2-alt: hsl(340, 100%, 59%);
   --color-3: hsl(0, 0%, 33%);
@@ -13,8 +14,10 @@
   --color-4-alt: hsl(0, 0%, 79%);
   --color-5: hsl(0, 0%, 97%);
   --color-6: hsl(0, 0%, 0%);
+  --color-6-alt: hsl(0, 0%, 20%);
   --color-7: hsl(174, 100%, 29%);
   --color-8: hsl(0, 0%, 77%);
+  --color-8-alt: hsl(0, 0%, 69%);
   --color-9: hsl(171, 39%, 42%);
   --color-9-alt: hsl(171, 39%, 36%);
 

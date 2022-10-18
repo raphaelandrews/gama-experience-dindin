@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/global/footer.css">
     <link rel="stylesheet" href="../assets/css/cursos.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+
     <link rel="shortcut icon" href="../assets/img/logo-dindin.svg" type="image/x-icon">
 
     <title>dindin</title>
@@ -21,7 +23,7 @@
 <body>
     <header class="header">
         <div class="nav-container">
-            <nav class="nav">
+            <nav class="nav" id="nav">
                 <a href="../index.html" class="nav__logo">
                     <img src="../assets/img/logo-header.png" alt="dindin logo">
                 </a>
@@ -39,6 +41,10 @@
         </div>
     </header>
 
+    <a href="#nav" class="scroll__top" id="scroll__top">
+        <i class='bx bx-chevrons-up scroll__icon'></i>
+    </a>
+
     <main>
         <section class="courses">
             <div class="container">
@@ -46,7 +52,7 @@
                 <h3>Educação Financeira é tudo de bom</h3>
                 <div class="row">
                     <img src="../assets/img/ilustra-poupando.png" alt="Investimento para iniciantes" class="col">
-                    <div class="col card__content">
+                    <div class="col">
                         <h2>Investimento para iniciantes</h2>
                         <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
@@ -58,10 +64,37 @@
                             voluptatem
                             sequi nesciunt. </p>
 
-                        <a href="./curso.html" class="btn">começar agora</a>
-
+                        <div class="btn__container">
+                            <span class="courses__btn" id="btn1">começar agora</span>
+                        </div>
                     </div>
                 </div>
+
+                <dialog>
+                    <div class="row">
+                        <i class='bx bx-x close' id="close"></i>
+                        <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
+                            class="modal__col">
+                        <div class="modal__col">
+                            <h2>Poupando e Rendendo</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                qui ratione voluptatem sequi nesciunt.
+                            </p>
+                            <ol>
+                                <li>1 - Aula introdutória</li>
+                                <li>2 - História sobre inventimento</li>
+                                <li> 3 - Por onde começar</li>
+                            </ol>
+                            <p>Professor: Jane Doe</p>
+                            <div class="btn__container">
+                                <a href="./curso.html" class="btn__modal">link para as aulas</a>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
 
                 <div class="row">
                     <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo" class="col">
@@ -76,9 +109,37 @@
                             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                             voluptatem
                             sequi nesciunt. </p>
-                        <a href="./curso.html" class="btn">começar agora</a>
+                        <div class="btn__container">
+                            <span class="courses__btn" id="btn2">começar agora</span>
+                        </div>
                     </div>
                 </div>
+
+                <dialog>
+                    <div class="row">
+                        <i class='bx bx-x close2' id="close"></i>
+                        <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
+                            class="modal__col">
+                        <div class="modal__col">
+                            <h2>Poupando e Rendendo</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                qui ratione voluptatem sequi nesciunt.
+
+                                1 - Aula introdutória
+                                2 - História sobre inventimento
+                                3 - Por onde começar
+
+                                Professor: Jane Doe
+                            </p>
+                            <div class="btn__container">
+                                <a href="./curso.html" class="btn__modal">começar agora</a>
+                            </div>
+                        </div>
+                    </div>
+                </dialog>
 
                 <div class="row">
                     <img src="../assets/img/ilustra-independencia.png" alt="Curso Independência Financeira" class="col">
@@ -93,9 +154,35 @@
                             aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione
                             voluptatem
                             sequi nesciunt. </p>
-                        <a href="./curso.html" class="btn">começar agora</a>
+                        <div class="btn__container">
+                            <span class="courses__btn" id="btn3">começar agora</span>
+                        </div>
                     </div>
                 </div>
+
+                <dialog>
+                    <div class="row">
+                        <i class='bx bx-x close' id="close"></i>
+                        <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
+                            class="modal__col">
+                        <div class="modal__col">
+                            <h2>Poupando e Rendendo</h2>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                                voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+                                qui ratione voluptatem sequi nesciunt.
+
+                                1 - Aula introdutória
+                                2 - História sobre inventimento
+                                3 - Por onde começar
+
+                                Professor: Jane Doe
+                            </p>
+                            <a href="./curso.html" class="btn__modal">começar agora</a>
+                        </div>
+                    </div>
+                </dialog>
             </div>
         </section>
     </main>

@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: var(--color-4);
@@ -10,7 +13,7 @@ section {
     padding: 5em 0;
 }
 
-ul {
+ul, ol {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -44,17 +47,47 @@ img {
     margin: 0 auto;
 }
 
-.active__link {
-    color: var(--color-3) !important;
+.btn__container {
+    display: flex;
+    justify-content: center;
 }
 
-.nav__link {
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+    background-color: var(--color-4-alt);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: var(--color-8-alt);
+    border-radius: .5rem;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: hsl(var(--second-hue), 8%, 20%);
+  }
+
+/*=============== SCROLL TOP ===============*/
+.scroll__top{
+    display: none;
+    position: fixed;
+    bottom: 1.5rem;
+    right: 1.5rem;
+    z-index: 1;
+}
+
+.scroll__icon {
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: .5em;
     color: var(--color-4);
-    transition: 0.5s ease;
+    background-color: var(--color);
+    transition: .6s;
 }
 
-.nav__link:hover {
-    color: var(--color-4-alt);
+.scroll__icon:hover {
+    background-color: var(--color-alt);
 }
 
 /*=============== RESPONSIVE ===============*/
