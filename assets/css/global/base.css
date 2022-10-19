@@ -3,9 +3,9 @@ html {
 }
 
 body {
-    background-color: var(--color-4);
-    color: var(--color-4);
     font-family: var(--font);
+    color: var(--color-4);
+    background-color: var(--color-4);
     transition: .4s;
 }
 

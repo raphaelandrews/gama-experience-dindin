@@ -39,6 +39,15 @@
     cursor: pointer;
 }
 
+.nav__link {
+    color: var(--color-4);
+    transition: 0.5s ease;
+}
+
+.nav__link:hover {
+    color: var(--color-4-alt);
+}
+
 .nav__burguer {
     display: block;
 }
@@ -69,25 +78,10 @@
     color: var(--color-3) !important;
 }
 
-.nav__link {
-    color: var(--color-4);
-    transition: 0.5s ease;
-}
-
-.nav__link:hover {
-    color: var(--color-4-alt);
-}
-
-
 /*=============== RESPONSIVE ===============*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 800px) {
     .nav__logo {
         width: 244px;
-    }
-    
-    .nav__burguer {
-        display: none;
-        cursor: pointer;
     }
 
     .nav__list {
@@ -103,6 +97,11 @@
 
     .nav__item {
         padding: 0;
+    }
+
+    .nav__burguer {
+        display: none;
+        cursor: pointer;
     }
 }
 
