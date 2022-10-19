@@ -34,8 +34,10 @@
 }
 
 .nav__item {
-    padding: 1em 0;
+    font-size: var(--sz-8);
     font-weight: 700;
+    line-height: 23px;
+    padding: 1em 0;
     cursor: pointer;
 }
 
@@ -98,6 +100,7 @@
     }
 
     .nav__item {
+        font-size: var(--sz-6);
         padding: 0;
     }
 
