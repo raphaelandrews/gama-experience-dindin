@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="../assets/css/global/footer.css">
     <link rel="stylesheet" href="../assets/css/blog.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+
     <link rel="shortcut icon" href="../assets/img/logo-dindin.svg" type="image/x-icon">
 
     <title>dindin</title>
@@ -21,119 +23,78 @@
 <body>
     <header class="header header__blog"></header>
 
+    <section class="hero">
+        <div class="container blog__row">
+            <div class="col">
+                <h1>MAIS CONTEÚDO<br>PARA VOCÊ</h1>
+                <p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                    consequuntur magni
+                    dolores eos qui ratione voluptatem sequi nesciunt.</p>
+            </div>
+            <img class="col" src="../assets/img/ilustra-blog.png" alt="Blog dindin">
+        </div>
+    </section>
+
     <a href="#nav" class="scroll__top" id="scroll__top">
         <i class='bx bx-chevrons-up scroll__icon'></i>
     </a>
 
-    <main style="min-height: 100vh;">
+    <!--Aqui eu preferiria fezer com flexbox, mas como ainda não foi utilizado grid nesse desafio, 
+        optei por assim para cobrir essa possibilidade também-->
+    <main>
+        <section class="blog">
+            <div class="container">
+                <div class="blog__grid">
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
 
-        <!DOCTYPE html>
-        <html lang="en">
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
 
-        <head>
-            <meta charset="UTF-8">
-            <meta http-equiv="X-UA-Compatible" content="IE=edge">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Dindin</title>
-            <link rel="stylesheet" href="blog.css">
-            <link
-                href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
-                rel="stylesheet">
-        </head>
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
 
-        <body>
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
 
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
 
-            <section class="container-top">
-                <h1 class="top-title">MAIS CONTEÚDO<br />PARA VOCÊ</h1>
-
-                <p class="top-text">
-                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
-                    magni
-                    dolores eos qui ratione voluptatem sequi nesciunt.
-                </p>
-
-                <img class="top-img" src="../assets/img/ilustra-blog.png" alt="">
-            </section>
-
-            <section class="container-post">
-                <div class="post1">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
+                    <a href="post.html" class="blog__card">
+                        <div class="blog__img"></div>
+                        <h2>On the other hand, we denounce</h2>
+                        <p> On the other hand, we denounce with righteous indignation and dislike men who are so
+                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that
+                            they cannot foresee the pain and trouble that are bound.</p>
+                    </a>
                 </div>
-
-                <div class="post">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
-                </div>
-
-
-                <div class="post3">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
-                </div>
-
-
-                <div class="post">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
-                </div>
-
-                <div class="post5">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
-                </div>
-
-                <div class="post">
-                    <img class="post-img" src="img" alt="">
-                    <h1 class="post-h1">On the other hand, we denounce</h1>
-                    <p class="post-text">
-                        On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
-                        and
-                        demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot
-                        foresee the
-                        pain and trouble that are bound.
-                    </p>
-                </div>
-            </section>
-        </body>
-
-        </html>
+            </div>
+        </section>
     </main>
 
     <footer class="footer"></footer>

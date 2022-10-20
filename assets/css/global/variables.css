@@ -20,6 +20,7 @@
   --color-8-alt: hsl(0, 0%, 69%);
   --color-9: hsl(171, 39%, 42%);
   --color-9-alt: hsl(171, 39%, 36%);
+  --color-10: hsl(0, 0%, 62%);
 
   /*========== Font and typography ==========*/
   --font: 'Ubuntu', sans-serif;
@@ -36,10 +37,9 @@
   --sz-9: .875rem;
 }
 
-  /*=============== RESPONSIVE ===============*/
+/*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 769px) {
   :root {
     --header-height: 7.25rem;
   }
 }
-

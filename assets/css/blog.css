@@ -1,231 +1,130 @@
-.container-top {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "texto img"
-        "texto2 img "
-    ;
-    padding-bottom: 5.625rem;
-}
-
-.top-title {
-    align-self: center;
-    color: #009688;
-    font-size: 2.938rem;
+h1 {
+    font-size: var(--sz-3);
     font-weight: 700;
-    font-family: 'Ubuntu', sans-serif;
-    justify-self: end;
-    margin-top: 0;
-    margin-bottom: 3.125rem;
-    padding-top: 7.625rem;
-    width: 28.813rem;
-
+    color: var(--color-7);
+    line-height: 40px;
+    margin-bottom: .5em;
 }
 
-.top-text {
-    align-self: flex-start;
-    color: #000000;
-    font-size: 1.25rem;
-    font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
-    justify-self: end;
-    margin-top: 0;
-    margin-bottom: 3rem;
-    width: 28.813rem;
-    height: 6.875rem;
-}
-
-.top-img {
-    grid-area: img;
-    padding-top: 3rem;
-    padding-left: 5rem;
-
-}
-
-.container-post {
-    background-color: #E5E5E5;
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-    /* gap: 0 4.5rem; */
-    /* padding-top: 6.25rem; */
-    padding-bottom: 10.625rem
-}
-
-
-.post {
-    justify-self: center;
-    padding-top: 6.25rem;
-    width: 33.5rem;
-}
-
-.post1,
-.post3,
-.post5 {
-    justify-self: center;
-    padding-top: 6.25rem;
-    width: 33.5rem;
-}
-
-.post-img {
-    background-color: #c4c4c4;
-    height: 16.188rem;
-    width: 32.375rem;
-}
-
-
-.post-h1 {
-    color: #FF4081;
-    display: inline-block;
+h2 {
     font-size: 1.875rem;
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    padding-top: 1.188rem;
+    color: var(--color-2);
+    line-height: 34px;
+    margin: 1em 0;
 }
 
+a:hover {
+    opacity: 0.8;
+}
 
-.post-text {
-    color: #000000;
-    font-size: 1.063rem;
+/*=========== HERO ===========*/
+.hero {
+    padding: 6em 0;
+}
+
+.hero .col:first-child {
+    text-align: center;
+}
+
+.hero .col:last-child {
+    width: clamp(240px, 40vw, 405px);
+    margin: 3em auto 0;
+}
+
+.hero p {
+    font-size: var(--sz-6);
     font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
-    padding-top: 1.188rem;
-    width: 32.25rem;
+    color: var(--color-3);
+    line-height: 20px;
+    max-width: 420px;
+    margin: 0 auto 1.75em;
 }
 
+/*=============== MAIN ===============*/
+/*=========== COURSES ===========*/
+.blog {
+    background-color: var(--color-5);
+}
 
-@media screen and (max-width:1024px) {
-    .container-top {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "texto"
-            "texto2 "
-        ;
-        max-width: 40rem;
-        margin: 0 auto;
-    }
+/*.blog__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    place-items: center;
+    gap: 2em;
+}*/
 
-    .top-title {
-        max-width: 23.175rem;
-        padding-top: 5rem;
-        justify-self: center;
-        text-align: center;
-    }
+.blog__grid {
+    display: grid;
+    grid-template-columns: minmax(auto, 520px);
+    justify-content: center;
+    gap: 2em;
+}
 
-    .top-text {
-        max-width: 23.175rem;
-        margin-bottom: 0;
-        justify-self: center;
-        text-align: center;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
-    }
+.blog__img {
+    width: 100%;
+    height: 260px;
+    background-color: var(--color-8);
+}
 
-    .top-img {
-        display: none;
-    }
+.blog p {
+    font-size: var(--sz-7);
+    font-weight: 300;
+    line-height: 20px;
+    color: var(--color-6);
+    margin-bottom: 2em;
+}
 
-
-    .container-post {
-        display: grid;
-        grid-template-columns: 1fr;
-        /* max-width: 23.438rem; */
-    }
-
-    .post {
-        justify-self: center;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 6.25rem;
-        width: 40rem
-    }
-
-    .post1,
-    .post3,
-    .post5 {
-        text-align: center;
-        margin: 0 auto;
-        justify-self: end;
-        padding-top: 6.25rem;
-        width: 40rem
-    }
-
-    .post-img {
-        width: 40rem;
-    }
-
-    .post-text {
-        max-width: 40em;
-        text-align: center;
-        margin: auto;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 600px) {
+    h1 {
+        font-size: var(--sz-2);
+        line-height: 54px;
+        margin-bottom: 1em;
     }
 }
 
-
-@media screen and (max-width:480px) {
-
-    .container-top {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "texto"
-            "texto2 "
-        ;
-        max-width: 23.175rem;
+@media screen and (min-width: 900px) {
+    .blog__row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
-    .top-title {
-        max-width: 23.175rem;
-        padding-top: 5rem;
-        text-align: center;
+    .hero .col:first-child {
+        text-align: left;
+        width: 47%;
     }
 
-    .top-text {
-        max-width: 23.175rem;
-        margin-bottom: 0;
-        text-align: center;
-        padding-left: 0.5rem;
-        padding-right: 0.5rem;
+    .hero .col:last-child {
+        margin: 0;
     }
 
-    .top-img {
-        display: none;
+    .hero p {
+        margin: 0;
     }
 
+    /*.blog__grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 2em;
+    }*/
 
-    .container-post {
+    .blog__grid {
         display: grid;
-        grid-template-columns: 1fr;
-        /* max-width: 23.438rem; */
-    }
+        justify-content: space-between;
+        grid-template-columns: repeat(2, minmax(auto, 520px));
+    }       
+}
 
-    .post {
-        justify-self: center;
-        text-align: center;
-        margin: 0 auto;
-        padding-top: 6.25rem;
-        max-width: 23.175rem
-    }
+@media screen and (min-width: 1200px) {
+    /*.blog__grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }*/
+}
 
-    .post1,
-    .post3,
-    .post5 {
-        text-align: center;
-        margin: 0 auto;
-        justify-self: end;
-        padding-top: 6.25rem;
-        max-width: 23.175rem
-    }
-
-    .post-img {
-        width: 22rem;
-    }
-
-    .post-text {
-        max-width: 23.175rem;
-        text-align: center;
-        margin: auto;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
-    }
+@media screen and (min-width: 1400px) {
+    /*.blog__grid {
+        grid-template-columns: repeat(auto-fit, minmax(520px, 1fr));
+        gap: 4em;
+    }*/
 }

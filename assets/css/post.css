@@ -1,264 +1,41 @@
-.container-top {
-    display: grid;
-    grid-template-columns: 1fr;
-    max-width: 1050px;
-    margin: 0 auto;
-    padding-bottom: 4.688rem;
-}
-
-
-.top-title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.top-title h1 {
-    margin: 6.938rem 0 0 0;
-    color: #ff4081;
-    font-size: 3.125rem;
+h1 {
+    font-size: var(--sz-2);
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+    line-height: 57px;
+    text-align: center;
+    margin-bottom: .15em;
 }
 
-.top-title span {
-    margin: 0 0 4.688rem 0;
-    color: #9D9D9D;
-    font-size: 1.125rem;
-    font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-
-#retangulo {
-
-    display: block;
-    margin: 0 0 3.688rem 0;
-    width: 1032px;
-    height: 465px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #C4C4C4;
-
-}
-
-
-.post p {
-    color: #000000;
-    font-size: 1.125rem;
-    font-weight: 300;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.post h2 {
-    padding-top: 2.500rem;
-    color: #419488;
-    font-size: 1.625rem;
+h2 {
+    font-size: var(--sz-4);
     font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
+    line-height: 30px;
+    color: var(--color-9);
+    margin-bottom: 1em;
 }
 
-.container-foot {
-    background-color: #F7F7F7;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-areas:
-        "title title title"
-        "card1 card2  card3"
-    ;
-}
-
-
-.curso-title {
-    color: #ff4081;
-    font-size: 3.125rem;
-    font-weight: 500;
-    font-family: 'Ubuntu', sans-serif;
-    grid-area: title;
-    margin: 0;
-    text-align: center;
-    padding: 5rem 0;
-
-}
-
-
-.card-cursos1 {
-    padding-bottom: 8.125rem;
-    justify-self: center;
-    text-align: center;
-    grid-area: card1;
-}
-
-
-.card-cursos2 {
-    padding-bottom: 8.125rem;
-    justify-self: center;
-    text-align: center;
-    grid-area: card2;
-}
-
-
-.card-cursos3 {
-    padding-bottom: 8.125rem;
-    justify-self: center;
-    text-align: center;
-    grid-area: card3;
-}
-
-
-
-.img-cursos1 {
-    width: 14.875rem;
-    height: 16.875rem;
-}
-
-.img-cursos2 {
-    width: 14.875rem;
-    height: 16.875rem;
-}
-
-.img-cursos3 {
-    width: 14.875rem;
-    height: 16.875rem;
-
-}
-
-
-.frase-cursos {
-    color: #FF4081;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 700;
-    font-size: 1.563rem;
-    padding-top: 2.0rem;
-}
-
-
-.texto-cursos {
-    color: #000000;
-    font-family: 'Ubuntu', sans-serif;
+p {
+    font-size: var(--sz-7);
     font-weight: 300;
-    font-size: 1.125rem;
-    line-height: 1.25rem;
-    margin: 0.5rem auto;
-    width: 18.313rem;
-    padding-bottom: 1.4rem;
+    line-height: 20px;
+    color: var(--color-6);
+    margin-bottom: 2em;
 }
 
-
-.cursos-btn {
-    background: #FF4081;
-    border-radius: 3.875rem;
-    color: #FFFFFF;
-    display: inline-block;
-    font-size: 1.25rem;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: 400;
-    line-height: 1.30rem;
-    height: 3.188rem;
-    padding-top: 1.0rem;
-    width: 14.563rem;
-
+/*=========== POSTS ===========*/
+.post {
+    margin-bottom: 4em;
 }
 
-
-@media screen and (max-width:1024px) {
-
-
-    .container-top {
-        max-width: 47.5rem;
-        text-align: center;
-    }
-
-    .post {
-        margin: 0 auto;
-        max-width: 40rem;
-    }
-
-    .post p {
-        padding-left: 0.6rem;
-        width: 40rem;
-        text-align: center;
-    }
-
-    .post h2 {
-        padding-left: 0.6rem;
-        width: 40rem;
-    }
-
-    .top-title {
-        text-align: center;
-        width: 40rem;
-    }
-
-    .top-title h1 {
-        font-size: 2.125rem;
-        line-height: 2.8rem;
-        padding-bottom: 0.3rem;
-    }
-
-    #retangulo {
-        width: 40rem;
-        height: 40rem;
-    }
-
-    .container-foot {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "title"
-            "card1"
-            "card2"
-            "card3"
-    }
-
+.post__container {
+    max-width: 1032px;
 }
 
-@media screen and (max-width:480px) {
-
-
-    .container-top {
-        max-width: 29.375rem;
-    }
-
-    .post {
-        margin: 0 auto;
-        max-width: 27rem;
-    }
-
-    .post p {
-        padding-left: 0.6rem;
-        width: 22.118rem;
-    }
-
-    .post h2 {
-        padding-left: 0.6rem;
-        width: 22.118rem;
-    }
-
-    .top-title {
-        text-align: center;
-        width: 23.438rem;
-    }
-
-    .top-title h1 {
-        font-size: 2.125rem;
-        line-height: 2.8rem;
-        padding-bottom: 0.3rem;
-    }
-
-    #retangulo {
-        width: 22rem;
-        height: 22rem;
-    }
-
-    .container-foot {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "title"
-            "card1"
-            "card2"
-            "card3"
-    }
-
-
+.post__subtitle {
+    font-size: var(--sz-7);
+    font-weight: 300;
+    line-height: 21px;
+    color: var(--color-10);
+    text-align: center;
+    margin-bottom: 2em;
 }
