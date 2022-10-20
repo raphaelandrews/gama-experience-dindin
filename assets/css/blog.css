@@ -1,0 +1,231 @@
+.container-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "texto img"
+        "texto2 img "
+    ;
+    padding-bottom: 5.625rem;
+}
+
+.top-title {
+    align-self: center;
+    color: #009688;
+    font-size: 2.938rem;
+    font-weight: 700;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: end;
+    margin-top: 0;
+    margin-bottom: 3.125rem;
+    padding-top: 7.625rem;
+    width: 28.813rem;
+
+}
+
+.top-text {
+    align-self: flex-start;
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    justify-self: end;
+    margin-top: 0;
+    margin-bottom: 3rem;
+    width: 28.813rem;
+    height: 6.875rem;
+}
+
+.top-img {
+    grid-area: img;
+    padding-top: 3rem;
+    padding-left: 5rem;
+
+}
+
+.container-post {
+    background-color: #E5E5E5;
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    /* gap: 0 4.5rem; */
+    /* padding-top: 6.25rem; */
+    padding-bottom: 10.625rem
+}
+
+
+.post {
+    justify-self: center;
+    padding-top: 6.25rem;
+    width: 33.5rem;
+}
+
+.post1,
+.post3,
+.post5 {
+    justify-self: center;
+    padding-top: 6.25rem;
+    width: 33.5rem;
+}
+
+.post-img {
+    background-color: #c4c4c4;
+    height: 16.188rem;
+    width: 32.375rem;
+}
+
+
+.post-h1 {
+    color: #FF4081;
+    display: inline-block;
+    font-size: 1.875rem;
+    font-weight: 500;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 1.188rem;
+}
+
+
+.post-text {
+    color: #000000;
+    font-size: 1.063rem;
+    font-weight: 300;
+    font-family: 'Ubuntu', sans-serif;
+    padding-top: 1.188rem;
+    width: 32.25rem;
+}
+
+
+@media screen and (max-width:1024px) {
+    .container-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "texto2 "
+        ;
+        max-width: 40rem;
+        margin: 0 auto;
+    }
+
+    .top-title {
+        max-width: 23.175rem;
+        padding-top: 5rem;
+        justify-self: center;
+        text-align: center;
+    }
+
+    .top-text {
+        max-width: 23.175rem;
+        margin-bottom: 0;
+        justify-self: center;
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .top-img {
+        display: none;
+    }
+
+
+    .container-post {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* max-width: 23.438rem; */
+    }
+
+    .post {
+        justify-self: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 6.25rem;
+        width: 40rem
+    }
+
+    .post1,
+    .post3,
+    .post5 {
+        text-align: center;
+        margin: 0 auto;
+        justify-self: end;
+        padding-top: 6.25rem;
+        width: 40rem
+    }
+
+    .post-img {
+        width: 40rem;
+    }
+
+    .post-text {
+        max-width: 40em;
+        text-align: center;
+        margin: auto;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+}
+
+
+@media screen and (max-width:480px) {
+
+    .container-top {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "texto"
+            "texto2 "
+        ;
+        max-width: 23.175rem;
+    }
+
+    .top-title {
+        max-width: 23.175rem;
+        padding-top: 5rem;
+        text-align: center;
+    }
+
+    .top-text {
+        max-width: 23.175rem;
+        margin-bottom: 0;
+        text-align: center;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
+
+    .top-img {
+        display: none;
+    }
+
+
+    .container-post {
+        display: grid;
+        grid-template-columns: 1fr;
+        /* max-width: 23.438rem; */
+    }
+
+    .post {
+        justify-self: center;
+        text-align: center;
+        margin: 0 auto;
+        padding-top: 6.25rem;
+        max-width: 23.175rem
+    }
+
+    .post1,
+    .post3,
+    .post5 {
+        text-align: center;
+        margin: 0 auto;
+        justify-self: end;
+        padding-top: 6.25rem;
+        max-width: 23.175rem
+    }
+
+    .post-img {
+        width: 22rem;
+    }
+
+    .post-text {
+        max-width: 23.175rem;
+        text-align: center;
+        margin: auto;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+    }
+}
