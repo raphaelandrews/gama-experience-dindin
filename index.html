@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./assets/css/global/reset.css">
     <link rel="stylesheet" href="./assets/css/global/base.css">
     <link rel="stylesheet" href="./assets/css/global/variables.css">
-    <link rel="stylesheet" href="./assets/css/global/header.css">
+    <link rel="stylesheet" href="./components/header/header.css">
     <link rel="stylesheet" href="./assets/css/index.css">
-    <link rel="stylesheet" href=".//components/courses/courses.css">
-    <link rel="stylesheet" href="./assets/css/global/footer.css">
+    <link rel="stylesheet" href="./components/courses/courses.css">
+    <link rel="stylesheet" href="./components/footer/footer.css">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 
@@ -22,33 +22,37 @@
 </head>
 
 <body>
-    <header class="header"></header>
+    <header role="banner" class="header" id="header"></header>
 
     <section class="hero">
         <div class="container hero__row">
             <div class="col">
                 <h1>Educação<br> Financeira<br> é tudo de bom</h1>
                 <p>Vem comigo que te mostro<br> por onde começar</p>
-                <a href="#" class="btn">quero saber mais</a>
+                <a href="#" aria-label="Acesse para saber mais sobre o nosso site" class="btn">quero saber mais</a>
             </div>
-            <img class="col" src="./assets/img/ilustra-banner.png" alt="Ilustra Banner">
+            <img class="col" src="./assets/img/ilustra-banner.png" alt="Ilustra Banner" title="Ilustra Banner">
         </div>
     </section>
 
-    <a href="#nav" class="scroll__top" id="scroll__top">
+    <a href="#header" class="scroll__top" id="scroll__top">
         <i class='bx bx-chevrons-up scroll__icon'></i>
     </a>
 
-    <main>
+    <main role="main">
         <section class="courses">
             <div class="container courses__row">
                 <div class="col">
-                    <img class="courses__img-1" src="./assets/img/ilustra-poupando.png"
+                    <img class="courses__img-1" 
+                    src="./assets/img/ilustra-poupando.png"
                         alt="Investimento para iniciantes">
                     <h3>Investimento para iniciantes</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html">começar agora</a>
+                    <a href="./cursos.html"
+                        aria-label="Acesse para saber mais sobre o nosso curso de Investimento para iniciantes">
+                        começar agora
+                    </a>
                 </div>
                 <div class="col">
                     <img class="courses__img-2" src="./assets/img/ilustra-investimento.png"
@@ -56,7 +60,10 @@
                     <h3>Poupando e Rendendo</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html">começar agora</a>
+                    <a href="./cursos.html"
+                        aria-label="Acesse para saber mais sobre o nosso curso Poupando e Rendendo">
+                        começar agora
+                    </a>
                 </div>
                 <div class="col">
                     <img class="courses__img-3" src="./assets/img/ilustra-independencia.png"
@@ -64,7 +71,10 @@
                     <h3>Independência Financeira</h3>
                     <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
                         dolore eu fugiat nulla pariatur.</p>
-                    <a href="./pages/cursos.html">começar agora</a>
+                    <a href="./cursos.html"
+                        aria-label="Acesse para saber mais sobre o nosso curso de Independência Financeira">
+                        começar agora
+                    </a>
                 </div>
             </div>
         </section>
@@ -147,17 +157,21 @@
                 </div>
 
                 <div class="btn__container">
-                    <a href="./pages/blog.html" class="posts__btn">ver todos os posts</a>
+                    <a href="./blog.html" class="posts__btn"
+                        aria-label="Acesse para saber mais sobre as postagens do nosso blog">
+                        ver todos os posts
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer role="contentinfo" class="footer"></footer>
 
     <!--=============== SCRIPTS ===============-->
-    <script src="./components/headerIndex.js"></script>
-    <script src="./components/footerIndex.js"></script>
+    <script src="./components/header/header.js"></script>
+    <script src="./components/courses/courses.js"></script>
+    <script src="./components/footer/footer.js"></script>
     <script src="./assets/js/index.js"></script>
 </body>
 

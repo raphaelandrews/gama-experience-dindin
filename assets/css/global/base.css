@@ -36,12 +36,6 @@ img {
 }
 
 /*=============== CLASSES E ID'S REUTILIZÁVEIS ===============*/
-.nav-container {
-    width: 90%;
-    max-width: 1440px;
-    margin: 0 auto;    
-}
-
 .container {
     width: 80%;
     max-width: 1180px;

@@ -6,37 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="../assets/css/global/reset.css">
-    <link rel="stylesheet" href="../assets/css/global/base.css">
-    <link rel="stylesheet" href="../assets/css/global/variables.css">
-    <link rel="stylesheet" href="../assets/css/global/header.css">
-    <link rel="stylesheet" href="../assets/css/global/footer.css">
-    <link rel="stylesheet" href="../assets/css/cursos.css">
+    <link rel="stylesheet" href="./assets/css/global/reset.css">
+    <link rel="stylesheet" href="./assets/css/global/base.css">
+    <link rel="stylesheet" href="./assets/css/global/variables.css">
+    <link rel="stylesheet" href="./components/header/header.css">
+    <link rel="stylesheet" href="./components/footer/footer.css">
+    <link rel="stylesheet" href="./assets/css/cursos.css">
 
     <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
 
-    <link rel="shortcut icon" href="../assets/img/logo-dindin.svg" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/img/logo-dindin.svg" type="image/x-icon">
 
     <title>dindin</title>
 </head>
 
 <body>
-    <header class="header header__courses"></header>
+    <header role="banner" class="header header__courses" id="header"></header>
 
-    <a href="#nav" class="scroll__top" id="scroll__top">
+    <a href="#header" class="scroll__top" id="scroll__top">
         <i class='bx bx-chevrons-up scroll__icon'></i>
     </a>
-    
-    <main>
+
+    <main role="main">
         <section class="courses">
             <div class="container">
                 <h1>Cursos</h1>
                 <h3>Educação Financeira é tudo de bom</h3>
                 <div class="row">
-                    <img src="../assets/img/ilustra-poupando.png" alt="Investimento para iniciantes" class="col">
+                    <img src="./assets/img/ilustra-poupando.png" alt="Curso Investimento para iniciantes"
+                        title="Curso Investimento para iniciantes" aria-labelledby="course1" class="col">
                     <div class="col">
                         <h2>Investimento para iniciantes</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p id="course1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
                             quasi
@@ -47,7 +48,9 @@
                             sequi nesciunt. </p>
 
                         <div class="btn__container">
-                            <span class="courses__btn" id="btn1">começar agora</span>
+                            <span class="courses__btn"
+                                aria-label="Acesse para saber mais sobre o nosso curso de Investimento para iniciantes"
+                                aria-labelledby="course1" id="btn1">começar agora</span>
                         </div>
                     </div>
                 </div>
@@ -55,11 +58,12 @@
                 <dialog id="dialog1">
                     <div class="row">
                         <i class='bx bx-x close' id="close1"></i>
-                        <img src="../assets/img/ilustra-poupando.png" alt="Investimento para iniciantes"
-                            class="modal__col">
+                        <img src="./assets/img/ilustra-poupando.png" alt="Curso Investimento para iniciantes"
+                            title="Curso Investimento para iniciantes" aria-labelledby="modal1" class="modal__col">
                         <div class="modal__col">
                             <h2>Investimento para iniciantes</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            <p id="modal1">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                                 architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
                                 voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
@@ -72,17 +76,20 @@
                             </ol>
                             <p>Professor: Jane Doe</p>
                             <div class="btn__container">
-                                <a href="./curso.html" class="btn__modal">link para as aulas</a>
+                                <a href="./curso.html"
+                                    aria-label="Acesse para ir na página do curso Investimento para iniciantes"
+                                    aria-labelledby="modal1" class="btn__modal">link para as aulas</a>
                             </div>
                         </div>
                     </div>
                 </dialog>
 
                 <div class="row">
-                    <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo" class="col">
+                    <img src="./assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
+                        title="Curso Poupando e Rendendo" aria-labelledby="course2" class="col">
                     <div class="col">
                         <h2>Poupando e Rendendo</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p id="course2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
                             quasi
@@ -92,7 +99,9 @@
                             voluptatem
                             sequi nesciunt. </p>
                         <div class="btn__container">
-                            <span class="courses__btn" id="btn2">começar agora</span>
+                            <span class="courses__btn"
+                                aria-label="Acesse para saber mais sobre o nosso curso Poupando e Rendendo"
+                                aria-labelledby="course2" id="btn2">começar agora</span>
                         </div>
                     </div>
                 </div>
@@ -100,11 +109,12 @@
                 <dialog id="dialog2">
                     <div class="row">
                         <i class='bx bx-x close' id="close2"></i>
-                        <img src="../assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
-                            class="modal__col">
+                        <img src="./assets/img/ilustra-investimento.png" alt="Curso Poupando e Rendendo"
+                            title="Curso Poupando e Rendendo" aria-labelledby="modal2" class="modal__col">
                         <div class="modal__col">
                             <h2>Poupando e Rendendo</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            <p id="modal2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                                 architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
                                 voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
@@ -117,17 +127,20 @@
                             </ol>
                             <p>Professor: Jane Doe</p>
                             <div class="btn__container">
-                                <a href="./curso.html" class="btn__modal">começar agora</a>
+                                <a href="./curso.html"
+                                    aria-label="Acesse para ir na página do curso Poupando e Rendendo"
+                                    aria-labelledby="modal2" class="btn__modal">começar agora</a>
                             </div>
                         </div>
                     </div>
                 </dialog>
 
                 <div class="row row__border">
-                    <img src="../assets/img/ilustra-independencia.png" alt="Curso Independência Financeira" class="col">
+                    <img src="./assets/img/ilustra-independencia.png" alt="Curso Independência Financeira"
+                        title="Curso Independência Financeira" aria-labelledby="course3" class="col">
                     <div class="col">
                         <h2>Independência Financeira</h2>
-                        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                        <p id="course3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
                             accusantium
                             doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
                             quasi
@@ -137,7 +150,9 @@
                             voluptatem
                             sequi nesciunt. </p>
                         <div class="btn__container">
-                            <span class="courses__btn" id="btn3">começar agora</span>
+                            <span class="courses__btn"
+                                aria-label="Acesse para saber mais sobre o nosso curso de Independência Financeira"
+                                aria-labelledby="course3" id="btn3">começar agora</span>
                         </div>
                     </div>
                 </div>
@@ -145,11 +160,12 @@
                 <dialog id="dialog3">
                     <div class="row">
                         <i class='bx bx-x close' id="close3"></i>
-                        <img src="../assets/img/ilustra-independencia.png" alt="Curso Independência Financeira"
-                            class="modal__col">
+                        <img src="./assets/img/ilustra-independencia.png" alt="Curso Independência Financeira"
+                            title="Curso Independência Financeira" aria-labelledby="modal3" class="modal__col">
                         <div class="modal__col">
                             <h2>Independência Financeira</h2>
-                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                            <p id="modal3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                                doloremque
                                 laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
                                 architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
                                 voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
@@ -161,7 +177,9 @@
                                 <li>3 - Por onde começar</li>
                             </ol>
                             <p>Professor: Jane Doe</p>
-                            <a href="./curso.html" class="btn__modal">começar agora</a>
+                            <a href="./curso.html"
+                                aria-label="Acesse para ir na página do curso Independência Financeira"
+                                aria-labelledby="modal3" class="btn__modal">começar agora</a>
                         </div>
                     </div>
                 </dialog>
@@ -169,13 +187,13 @@
         </section>
     </main>
 
-    <footer class="footer"></footer>
+    <footer role="contentinfo" class="footer"></footer>
 
     <!--=============== SCRIPTS ===============-->
-    <script src="../components/header.js"></script>
-    <script src="../components/footer.js"></script>
-    <script src="../assets/js/modal.js"></script>
-    <script src="../assets/js/index.js"></script>
+    <script src="./components/header/header.js"></script>
+    <script src="./components/footer/footer.js"></script>
+    <script src="./assets/js/modal.js"></script>
+    <script src="./assets/js/index.js"></script>
 </body>
 
 </html>

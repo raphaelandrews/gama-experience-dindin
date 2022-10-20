@@ -4,11 +4,14 @@
     z-index: 1;
 }
 
-.nav {
+.nav-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 90%;
     min-height: var(--header-height);
+    max-width: 1440px;
+    margin: 0 auto;    
 }
 
 .nav__logo {
