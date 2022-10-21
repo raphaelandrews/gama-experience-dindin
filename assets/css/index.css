@@ -169,10 +169,15 @@ h3 {
     margin: 0 auto;
 }
 
+.posts .col:hover {
+    opacity: 0.8;
+}
+
 .posts__img {
     width: 100%;
     height: 190px;
     margin-bottom: .5em;
+    object-fit: cover;
     background-color: var(--color-8);
 }
 

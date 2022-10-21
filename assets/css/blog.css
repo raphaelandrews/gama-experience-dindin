@@ -64,6 +64,7 @@ a:hover {
 .blog__img {
     width: 100%;
     height: 260px;
+    object-fit: cover;
     background-color: var(--color-8);
 }
 
