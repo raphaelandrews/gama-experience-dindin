@@ -21,7 +21,7 @@
 
 ## Sobre o Projeto
 
-<img src="./assets/img/readme-img.png" alt="Project Image" width="300" height="300">
+<img src="./assets/img/readme-img.png" alt="Project Image" width="610" height="350">
 
 Essa é a nossa resposta ao Desafio Hacker da Gama Academy que consiste em reproduzir interfaces em HTML e CSS a partir de um arquivo Figma. 
 
