@@ -85,12 +85,6 @@ a:hover {
 }
 
 @media screen and (min-width: 900px) {
-    .blog__row {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .hero .col:first-child {
         text-align: left;
         width: 47%;
@@ -102,6 +96,12 @@ a:hover {
 
     .hero p {
         margin: 0;
+    }
+
+    .blog__row {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     /*.blog__grid {

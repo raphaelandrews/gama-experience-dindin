@@ -1,0 +1,80 @@
+h1 {
+    font-size: var(--sz-10);
+    font-weight: 700;
+    color: var(--color-2);
+    line-height: 46px;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+form {
+    max-width: 490px;
+    margin: 0 auto;
+}
+
+button {
+    font-size: var(--sz-8);
+    font-weight: 800;
+    line-height: 22px;
+    color: var(--color-4);
+    background-color: var(--color-2);
+    border-radius: 100px;
+    padding: .5em 2.5em;
+}
+
+input, textarea {
+    font-family: var(--font-2);
+    font-size: var(--sz-8);
+    font-weight: 400px;
+    line-height: 22px;
+    border: 1px solid #686868;
+    border-radius: .5rem;
+    background: none;
+    outline: none;
+    padding: .75rem;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+textarea {
+    resize: none;
+}
+
+.contact {
+    padding: 6em 0;
+}
+
+.contact .col:last-child {
+    width: clamp(240px, 40vw, 450px);
+    margin: 3em auto 0;
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 900px) {
+    h1 {
+        text-align: left; 
+     }
+ 
+     form {
+         margin: 0;
+     }
+
+    .contact .col:first-child {
+        text-align: left;
+        width: 47%;
+    }
+
+    .contact .col:last-child {
+        margin: 0;
+    }
+
+    .contact p {
+        margin: 0;
+    }
+
+    .contact__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
